@@ -1,6 +1,6 @@
 # Table of contents
 
-* [项目介绍](README.md)
+* [R:Z 从零开始的RustOS编写体验指南](README.md)
 * [从一开始](cong-yi-kai-shi.md)
 
 ## Rust Jumpstart
