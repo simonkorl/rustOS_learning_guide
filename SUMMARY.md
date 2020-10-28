@@ -4,6 +4,7 @@
 * [这个指南是什么](docs/introduction/what-is-this.md)
 * [从一开始](docs/introduction/from_one.md)
 * [Goodbye Windows](docs/introduction/goodbye-windows.md)
+* [编程工具](docs/introduction/tools.md)
 
 ## Rust Jumpstart
 
