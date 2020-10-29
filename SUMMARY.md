@@ -11,7 +11,8 @@
 
 ## Rust Jumpstart
 
-* [Untitled](docs/rust-jumpstart/untitled.md)
+* [这是什么](docs/rust-jumpstart/what-is-this.md)
+* [环境配置](docs/rust-jumpstart/environment.md)
 
 ## rCore 之旅
 
