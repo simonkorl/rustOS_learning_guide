@@ -27,8 +27,8 @@
 
 #### 数据类型
 
-* [ex5: 标量](codes/ex5/ex5.md)
-* [ex6: 字面量](codes/ex6/ex6.md)
+* [ex5: 标量 (Primitives —— Scalar Types)](codes/ex5/ex5.md)
+* [ex6: 字面量 (Literals)](codes/ex6/ex6.md)
 * [ex7: tuple](codes/ex7/ex7.md)
 * [ex8: array 与 slice](codes/ex8/ex8.md)
 * [ex9: struct 与 Debug](codes/ex9/ex9.md)
@@ -38,6 +38,7 @@
 ### 语法特性
 
 * [ex12: 变量绑定](codes/ex12/ex12.md)
+* [ex13: Statement 与 Expression](codes/ex13/ex13.md)
 
 ### 附录
 
