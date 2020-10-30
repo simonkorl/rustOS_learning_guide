@@ -34,16 +34,16 @@ fn main() {
     println!("integer: {}", single_integer);
     // !error! 下面这句是错误的！
     // 上面一句可以打印，说明其类型为整型
-    // println!("single_tuple: {}", single_tuple);
+    println!("single_tuple: {}", single_tuple);
 
     // !error! 下面这句是错误的！
     // 我们定义的 vector 变量是不可变的（之后会说明）
-    // vector.1 = 1;
+    vector.1 = 1;
 
     let mut mut_vector = (1, 2i32); // 这是一个可变的 vector
     mut_vector.0 = 1;
     // !error! 下面这句是错误的！
     // 虽然你可以改变元组中的值，但是你不能改变它的类型 #4
-    // mut_vector.1 = 1.0;
+    mut_vector.1 = 1.0;
     println!("mut_vector: {:?}", mut_vector);
 }
