@@ -110,4 +110,6 @@ fn main() {
 
 关于代码中的`assert_eq!()`，可以发现它也由 ! 结尾，这说明它也是一个宏。这个宏用于断言(assert)，一般用于在程序中判断某个值是不是期望的值（`assert_eq!`判断两个值是否相同，不相同则报错）。如果发现程序的运行过程可能出了错误，则 assert 语句会发出警告并终止程序。但是它检查值的时机是在程序运行的时候，所以哪怕一句看上去明显不正确的断言`assert_eq!(true, false)`也不会导致编译器报错。
 
+## 参考资料
+
 [Rust By Example Literals and operators](https://doc.rust-lang.org/rust-by-example/primitives/literals.html)
