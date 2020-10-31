@@ -29,7 +29,7 @@
 * [ex6: 字面量 (Literals)](codes/ex6/ex6.md)
 * [ex7: tuple](codes/ex7/ex7.md)
 * [ex8: array 与 slice](codes/ex8/ex8.md)
-* [ex9: struct 与 Debug](codes/ex9/ex9.md)
+* [ex9: struct](codes/ex9/ex9.md)
 * [ex10: enum](codes/ex10/ex10.md)
 * [ex11: 打印与 Debug](codes/ex11/ex11.md)
 
