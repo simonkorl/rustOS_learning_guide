@@ -74,14 +74,25 @@ fn main(){
 
 实际上在 ex5 中，你就已经可以看到使用双引号表示的字符串，例如`"Hello World"`。实际上在 Rust 官方文档中，字符串 str 类型也属于基本数据类型，为什么我们没有在这一章说明呢？
 
-因为一般来说，字符串不会直接使用，因为 Rust 根本不给你那个权利去直接访问字符串（类 C 语言都是直接储存字符串的起始地址并且可以通过下标直接访问字符串中的字符）。当你定义字符串的时候，Rust 默认你保存下来一个`&str`，可以认为是一个不可变的字符串指针，称为“引用”(Reference)。这个引用会额外储存字符串的长度（编译时可以得知），来确保你访问字符串的时候不会越界。
+unsafe{
+    因为一般来说，字符串不会直接使用，因为 str 类型属于 DST (dynamically sized type)，也就是说编译器在编译的时候不能完全确定它的长度。当你定义字符串的时候，你实际上是绑定了一个`&str`，可以认为是一个不可变的字符串指针，称为“引用”(Reference)。
+}
 
 因为我们无法直接访问字符串，而必须靠引用，所以我们将字符串从基本数据类型这一章中暂时移除。
+
+### Why Unit Type
+
+为什么要有 Unit Type 这种实际上并不分配空间的类型呢？在后面的内容中你还会看到一些和 Unit Type 有关系的其他类型。
+
+unsafe {
+    至于为什么会有这种类型，编者大胆猜测这是一种针对编译器的优化方法。
+    虽然看上去 Unit Type 没有储存任何内容，实际上在内存中也没有分配任何空间，但是在编译的过程中 Unit Type 依然会绑定在我们定义的变量上，相关的变量依然可以进行传递，复制等操作。这样可以利用编译器更好地找到比如说一个只有名字的变量被如何操作；或者就是代表一个没有任何含义的量，并且满足了让每一个函数都有返回值（这句话是不对的，有的函数不会返回）
+}
 
 ## 参考资料
 
 - [Rust By Example：Primitives](https://doc.rust-lang.org/rust-by-example/primitives.html)
-
 - [Rust Language Cheat Sheet: data structures](https://cheats.rs/#data-structures)
-
 - 《深入理解计算机系统》
+- [doc.rust-lang.org: textual](https://doc.rust-lang.org/stable/reference/types/textual.html)
+- [doc.rust-lang.org: DST](https://doc.rust-lang.org/stable/reference/dynamically-sized-types.html)

@@ -25,8 +25,6 @@
 
 ### 基本概念
 
-#### 数据类型
-
 * [ex5: 标量 (Primitives —— Scalar Types)](codes/ex5/ex5.md)
 * [ex6: 字面量 (Literals)](codes/ex6/ex6.md)
 * [ex7: tuple](codes/ex7/ex7.md)
