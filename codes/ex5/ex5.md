@@ -68,8 +68,20 @@ fn main(){
 }
 ```
 
+## 碎碎念
+
+### Why not 'str'
+
+实际上在 ex5 中，你就已经可以看到使用双引号表示的字符串，例如`"Hello World"`。实际上在 Rust 官方文档中，字符串 str 类型也属于基本数据类型，为什么我们没有在这一章说明呢？
+
+因为一般来说，字符串不会直接使用，因为 Rust 根本不给你那个权利去直接访问字符串（类 C 语言都是直接储存字符串的起始地址并且可以通过下标直接访问字符串中的字符）。当你定义字符串的时候，Rust 默认你保存下来一个`&str`，可以认为是一个不可变的字符串指针，称为“引用”(Reference)。这个引用会额外储存字符串的长度（编译时可以得知），来确保你访问字符串的时候不会越界。
+
+因为我们无法直接访问字符串，而必须靠引用，所以我们将字符串从基本数据类型这一章中暂时移除。
+
 ## 参考资料
 
 - [Rust By Example：Primitives](https://doc.rust-lang.org/rust-by-example/primitives.html)
+
+- [Rust Language Cheat Sheet: data structures](https://cheats.rs/#data-structures)
 
 - 《深入理解计算机系统》

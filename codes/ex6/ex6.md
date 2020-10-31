@@ -1,6 +1,6 @@
 # ex6 字面量(Literals)
 
-## 字面量说明
+## 字面量(Literals)说明
 
 字面量如果就从“字面”意义上来讲，就是“所见即所得”。你所输入的变量既是你能理解的，也是计算机可以理解并且直接转化为数据存储下来的。这包括了整数、浮点数、字符、字符串等你可以直接在程序中表示出来的量。
 
@@ -53,9 +53,9 @@ fn main() {
     let float = 1.0; // 浮点数，默认为 f64
     let float_with_underscore = 0.000_1f32; // 浮点数，可以使用下划线分开。可以通过标注不使用默认类型
 
-    let characters = 'a'; // 字符，使用单引号表示
+    let characters: char = 'a'; // 字符char，使用单引号表示
 
-    let boolean = false; // bool 类型，只有 true 和 false 两个值
+    let boolean: bool = false; // bool 类型，只有 true 和 false 两个值
 
     // !注：下面这一行没有错误，但是它会阻止程序继续运行
     // 这个语句代表在程序运行中的某个要求，这里要求两个数值相等
@@ -66,7 +66,7 @@ fn main() {
     let another_unit = ();
     assert_eq!(unit, another_unit); // 两者是相同的
 
-    let string = "Hello World"; // 字符串，使用双引号表示，可以认为是一个 Unicode的序列。
+    let string: &str = "Hello World"; // 字符串 str，可以认为是一个 Unicode的序列。使用双引号表示
     println!("{}!", string);
 
     // 运算符
