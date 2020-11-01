@@ -50,7 +50,7 @@ fn main() {
 
     // Unit 结构体的实例化方法
     let _unit = Unit;
-    // 如果你让其继承了 Debug trait（也就是写了#[derive(Debug)]） 那么它会打印出来 Unit
+    // 如果你让其继承了 Debug trait（也就是写了#[derive(Debug)]） 那么它会打印出来 Unit，也就是声明的struct的名称
     // println!("{:?}", unit);
 
     let name = "Mike";
