@@ -71,7 +71,17 @@ cargo build --release
 ## 命令清单
 
 ```bash
-# 
+# 创建应用
+cargo new project
+
+# 运行应用
+cargo run
+
+# 编译应用，生成可执行文件
+cargo build
+
+# 生产环境
+cargo build --release
 ```
 
 

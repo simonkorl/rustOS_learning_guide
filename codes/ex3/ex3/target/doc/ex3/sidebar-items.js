@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["main","omg sad let a = 2;"]]});
