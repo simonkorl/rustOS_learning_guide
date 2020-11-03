@@ -1,0 +1,11 @@
+# 配置文件
+.DS_STORE
+**/.vscode
+
+### GitBook
+# GitBook 部署文件
+_book
+public
+# npm 依赖文件
+node_modules
+package-lock.json
