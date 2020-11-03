@@ -38,8 +38,7 @@
 
 ## rCore 之旅
 
-* [汇流成河](docs/rcore_journey/reference.md)
-
 ### 附录
 
 * [Lab Q&A](docs/rcore_journey/Lab_Q&A.md)
+* [汇流成河](docs/rcore_journey/reference.md)
