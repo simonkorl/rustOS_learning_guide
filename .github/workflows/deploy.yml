@@ -1,0 +1,29 @@
+name: Github Pages Gitbook
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: '10.21.0'
+      - name: Build GitBook
+        run: |
+          npm install gitbook-cli -g
+          gitbook install
+          gitbook build
+      - name: Push to remote repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: simonkorl/rustOS-learning-guide-deploy
+          publish_branch: dev
+          publish_dir: ./_book
+          commit_message: "[Auto-Deploy] "
