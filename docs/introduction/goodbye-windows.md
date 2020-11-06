@@ -122,9 +122,11 @@ p.s. 当你打开 WSL 时，你会发现它没有一个类似于桌面的显示�
 
 虚拟机是一种软件，你可以认为这个软件利用软件的方法模拟了一台由硬件组成的计算机。虚拟机的种类很多，实现多样且细节复杂，这里不多展开。如果只是要使用的话还是非常简单的。
 
-虚拟机有很多的选择，我们这里推荐安装 VMware ，因为其具有比较好的性能，但是因为需要激活，相关的激活步骤还请自行搜索。如果希望使用免费的虚拟机的话，VirtualBox 是个不错的选择，不过可能在性能上会逊色不少。
+虚拟机有很多的选择，我们这里推荐安装 VMware Workstation Player，因为其具有比较好的性能，而且与 VMware Workstation Pro 不同，前者可以免费用于非商业、个人和家用目的。此外，VirtualBox 是个不错的选择，不过可能在性能上会逊色不少。
 
-VMware 请自行寻找资源，VitualBox 的下载地址如下：
+VMware 及 VitualBox 的下载地址如下：
+
+[https://www.vmware.com/cn/products/workstation-player/workstation-player-evaluation.html](https://www.vmware.com/cn/products/workstation-player/workstation-player-evaluation.html)
 
 [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
