@@ -24,33 +24,31 @@ fn get_uint64() -> u64 {
         }
     }
 }
-fn main() {
-    let upper_bound: u64 = get_uint64();
-    // 处理特殊情况
-    if upper_bound <= 1{
-        // 没有质数可以打印
-    } else {
-        let mut n = 2; // 从 2 开始枚举
-        while n <= upper_bound {
-            // 使用穷举法判断质数
-            let mut i = 2;
-            let mut flag = true;
-            let prime_upper_bound = (n as f64).powf(0.5);
 
-            if prime_upper_bound >= 2.0 {
-                while i as f64 <= prime_upper_bound {
-                    if n % i == 0 {
-                        flag = false;
-                        break;
-                    }
-                    i += 1;
+
+struct Solution;
+impl Solution {
+    // #3
+    fn solution(n: u64) -> u64 {
+        return {
+            if n == 1 {
+                1 // #1
+            } else if n == 2 {
+                2
+            } else {
+                let mut dp = [0u64; 3]; // 使用基本的动态规划的思路
+                dp[0] = 1; // 上1节台阶有一种方法
+                dp[1] = 2; // 上2节台阶有两种方法
+                for _i in 3..=n { // #2
+                    dp[2] = dp[0] + dp[1];
+                    dp[0] = dp[1];
+                    dp[1] = dp[2];
                 }
+                dp[2]
             }
-            if flag {
-                print!("{}, ", n)
-            }
-            n += 1;
         }
     }
-    println!("\nThe end.");
+}
+fn main() {
+    println!("{}", Solution::solution(get_uint64()));
 }
