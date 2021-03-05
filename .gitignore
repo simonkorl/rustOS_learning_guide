@@ -9,3 +9,6 @@ public
 # npm 依赖文件
 node_modules
 package-lock.json
+
+# Cargo的target文件夹
+target/

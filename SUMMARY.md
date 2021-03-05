@@ -14,8 +14,6 @@
 * [这是什么](docs/rust-jumpstart/what-is-this.md)
 * [环境配置](docs/rust-jumpstart/environment.md)
 
-## rCore 之旅
-
 ### 代码之前
 
 * [ex1: Hello World](codes/ex1/ex1.md)
@@ -37,6 +35,8 @@
 
 * [ex12: 变量绑定](codes/ex12/ex12.md)
 * [ex13: Statement 与 Expression](codes/ex13/ex13.md)
+
+## rCore 之旅
 
 ### 附录
 
